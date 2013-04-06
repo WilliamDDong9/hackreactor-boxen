@@ -642,7 +642,7 @@ class people::ndhoule::config (
       type   => 'bool',
       user   => $::boxen_user;
 
-    'Prevent Time Machine from prompting to use new hard drives as backup volume':
+    'Allow Time Machine to use network drives as backup volumes':
       ensure => present,
       key    => 'TMShowUnsupportedNetworkVolumes',
       domain => 'com.apple.systempreferences',
