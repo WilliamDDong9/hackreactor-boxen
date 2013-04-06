@@ -44,7 +44,6 @@ class people::ndhoule::applications {
     [
       'coreutils',
       'cowsay',
-      'ctags',
       'git-flow',
       'gnu-sed',
       'heroku-toolbelt',
