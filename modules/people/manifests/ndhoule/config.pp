@@ -191,7 +191,7 @@ class people::ndhoule::config (
       type   => 'int',
       user   => $::boxen_user;
 
-    'Use scroll gesture with the Ctrl (^) modifier key to zoom':
+    'Use the Ctrl (^) modifier key as a trigger for zooming':
       ensure => present,
       key    => 'closeViewScrollWheelToggle',
       domain => 'com.apple.universalaccess',
@@ -199,7 +199,7 @@ class people::ndhoule::config (
       type   => 'bool',
       user   => $::boxen_user;
 
-    'Use scroll gesture with the Ctrl (^) modifier key to zoom':
+    'Use scroll gesture to zoom':
       ensure => present,
       key    => 'HIDScrollZoomModifierMask',
       domain => 'com.apple.universalaccess',
