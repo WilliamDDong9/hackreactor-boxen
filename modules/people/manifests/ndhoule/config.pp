@@ -597,7 +597,8 @@ class people::ndhoule::config (
       value  => 'true',
       type   => 'bool',
       user   => $::boxen_user;
-    'Enable the Develop menu in Safari':
+
+    'Enable the Develop menu in all WebKit-powered applications':
       ensure => present,
       key    => 'WebKitDeveloperExtrasEnabledPreferenceKey',
       domain => 'com.apple.Safari',
