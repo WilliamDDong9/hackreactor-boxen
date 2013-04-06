@@ -1,9 +1,4 @@
 GITHUBTARBALL
-  remote: boxen/puppet-appcleaner
-  specs:
-    appcleaner (1.0.0)
-
-GITHUBTARBALL
   remote: boxen/puppet-boxen
   specs:
     boxen (2.0.0)
@@ -14,19 +9,9 @@ GITHUBTARBALL
     chrome (1.1.0)
 
 GITHUBTARBALL
-  remote: boxen/puppet-clojure
-  specs:
-    clojure (1.2.0)
-
-GITHUBTARBALL
   remote: boxen/puppet-colloquy
   specs:
     colloquy (1.0.0)
-
-GITHUBTARBALL
-  remote: boxen/puppet-csshx
-  specs:
-    csshx (1.0.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-ctags
@@ -52,16 +37,6 @@ GITHUBTARBALL
   remote: boxen/puppet-firefox
   specs:
     firefox (1.0.5)
-
-GITHUBTARBALL
-  remote: boxen/puppet-fluid
-  specs:
-    fluid (1.0.0)
-
-GITHUBTARBALL
-  remote: boxen/puppet-flux
-  specs:
-    flux (0.0.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-gcc
@@ -149,16 +124,6 @@ GITHUBTARBALL
     postgresql (1.0.0)
 
 GITHUBTARBALL
-  remote: boxen/puppet-python
-  specs:
-    python (1.1.1)
-
-GITHUBTARBALL
-  remote: boxen/puppet-rdio
-  specs:
-    rdio (1.0.0)
-
-GITHUBTARBALL
   remote: boxen/puppet-repository
   specs:
     repository (1.0.0)
@@ -167,16 +132,6 @@ GITHUBTARBALL
   remote: boxen/puppet-ruby
   specs:
     ruby (3.6.0)
-
-GITHUBTARBALL
-  remote: boxen/puppet-sequel_pro
-  specs:
-    sequel_pro (1.0.0)
-
-GITHUBTARBALL
-  remote: boxen/puppet-skype
-  specs:
-    skype (1.0.2)
 
 GITHUBTARBALL
   remote: boxen/puppet-slate
@@ -204,16 +159,6 @@ GITHUBTARBALL
     tmux (1.0.2)
 
 GITHUBTARBALL
-  remote: boxen/puppet-transmission
-  specs:
-    transmission (1.0.0)
-
-GITHUBTARBALL
-  remote: boxen/puppet-tunnelblick
-  specs:
-    tunnelblick (1.0.0)
-
-GITHUBTARBALL
   remote: boxen/puppet-vim
   specs:
     vim (1.0.2)
@@ -224,39 +169,9 @@ GITHUBTARBALL
     virtualbox (1.0.1)
 
 GITHUBTARBALL
-  remote: boxen/puppet-vlc
-  specs:
-    vlc (1.0.0)
-
-GITHUBTARBALL
-  remote: boxen/puppet-vmware_fusion
-  specs:
-    vmware_fusion (1.0.0)
-
-GITHUBTARBALL
   remote: boxen/puppet-wget
   specs:
     wget (1.0.0)
-
-GITHUBTARBALL
-  remote: boxen/puppet-xquartz
-  specs:
-    xquartz (1.1.0)
-
-GITHUBTARBALL
-  remote: boxen/puppet-zsh
-  specs:
-    zsh (1.0.0)
-
-GITHUBTARBALL
-  remote: dieterdemeyer/puppet-openoffice
-  specs:
-    openoffice (1.1.0)
-
-GITHUBTARBALL
-  remote: grahamgilbert/puppet-alfred2
-  specs:
-    alfred2 (0.0.1)
 
 GITHUBTARBALL
   remote: grahamgilbert/puppet-dockutil
@@ -279,22 +194,16 @@ GITHUBTARBALL
     stdlib (3.2.0)
 
 DEPENDENCIES
-  alfred2 (= 0.0.1)
-  appcleaner (= 1.0.0)
   boxen (= 2.0.0)
   chrome (= 1.1.0)
   clipmenu (= 1.0.0)
-  clojure (= 1.2.0)
   colloquy (= 1.0.0)
-  csshx (= 1.0.0)
   ctags (= 1.0.0)
   cyberduck (= 1.0.0)
   dnsmasq (= 1.0.0)
   dockutil (= 0.1.2)
   emacs (= 1.1.0)
   firefox (= 1.0.5)
-  fluid (= 1.0.0)
-  flux (= 0.0.1)
   gcc (= 1.0.0)
   git (= 1.1.0)
   homebrew (= 1.1.2)
@@ -309,30 +218,19 @@ DEPENDENCIES
   nginx (= 1.1.0)
   nodejs (= 2.0.0)
   nvm (= 1.0.0)
-  openoffice (= 1.1.0)
   osx (= 1.0.0)
   pckeyboardhack (= 1.0.0)
   phantomjs (= 1.0.0)
   postgresql (= 1.0.0)
-  python (= 1.1.1)
-  rdio (= 1.0.0)
   repository (= 1.0.0)
   ruby (= 3.6.0)
-  sequel_pro (= 1.0.0)
-  skype (= 1.0.2)
   slate (= 1.0.0)
   stdlib (= 3.2.0)
   sublime_text_2 (= 1.1.0)
   sudo (= 1.0.0)
   sysctl (= 1.0.0)
   tmux (= 1.0.2)
-  transmission (= 1.0.0)
-  tunnelblick (= 1.0.0)
   vim (= 1.0.2)
   virtualbox (= 1.0.1)
-  vlc (= 1.0.0)
-  vmware_fusion (= 1.0.0)
   wget (= 1.0.0)
-  xquartz (= 1.1.0)
-  zsh (= 1.0.0)
 
