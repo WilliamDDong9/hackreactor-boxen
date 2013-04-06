@@ -12,7 +12,6 @@ class people::hackreactorworkstations::config::dotfiles (
     'user.email':        value => 'github@hackreactor.com';
 
     # Core config
-    'credential.helper': value => 'cache --timeout 30';
     'core.editor':       value => 'subl --wait';
     'core.pager':        value => 'less';
 
