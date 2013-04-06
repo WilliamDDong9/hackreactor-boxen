@@ -64,75 +64,75 @@ class people::ndhoule::applications {
 
   # NPM Packages
   nodejs::module { 'chai':
-    nodejs_version => 'v0.10'
+    node_version => 'v0.10'
   }
 
   nodejs::module { 'coffee-script':
-    nodejs_version => 'v0.10'
+    node_version => 'v0.10'
   }
 
   nodejs::module { 'coffeelint':
-    nodejs_version => 'v0.10'
+    node_version => 'v0.10'
   }
 
   nodejs::module { 'docco':
-    nodejs_version => 'v0.10'
+    node_version => 'v0.10'
   }
 
   nodejs::module { 'express':
-    nodejs_version => 'v0.10'
+    node_version => 'v0.10'
   }
 
   nodejs::module { 'grunt-cli':
-    nodejs_version => 'v0.10'
+    node_version => 'v0.10'
   }
 
   nodejs::module { 'grunt-init':
-    nodejs_version => 'v0.10'
+    node_version => 'v0.10'
   }
 
   nodejs::module { 'jscover':
-    nodejs_version => 'v0.10'
+    node_version => 'v0.10'
   }
 
   nodejs::module { 'jsctags':
-    nodejs_version => 'v0.10'
+    node_version => 'v0.10'
   }
 
   nodejs::module { 'jshint':
-    nodejs_version => 'v0.10'
+    node_version => 'v0.10'
   }
 
   nodejs::module { 'meteorite':
-    nodejs_version => 'v0.10'
+    node_version => 'v0.10'
   }
 
   nodejs::module { 'mocha':
-    nodejs_version => 'v0.10'
+    node_version => 'v0.10'
   }
 
   nodejs::module { 'node-inspector':
-    nodejs_version => 'v0.10'
+    node_version => 'v0.10'
   }
 
   nodejs::module { 'requirejs':
-    nodejs_version => 'v0.10'
+    node_version => 'v0.10'
   }
 
   nodejs::module { 'supervisor':
-    nodejs_version => 'v0.10'
+    node_version => 'v0.10'
   }
 
   nodejs::module { 'uglify-js':
-    nodejs_version => 'v0.10'
+    node_version => 'v0.10'
   }
 
   nodejs::module { 'lodash':
-    nodejs_version => 'v0.10'
+    node_version => 'v0.10'
   }
 
   nodejs::module { 'webdriverjs':
-    nodejs_version => 'v0.10'
+    node_version => 'v0.10'
   }
 
 }
