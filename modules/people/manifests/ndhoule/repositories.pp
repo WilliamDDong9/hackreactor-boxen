@@ -76,7 +76,7 @@ class people::ndhoule::repositories (
   file { "/Users/${my_username}/.zprezto":
     ensure  => link,
     target  => "${my_sourcedir}/dotfiles/zprezto",
-    require => Repository["zprezto"],
+    require => Repository["dotfiles"],
   }
 
   file { "/Users/${my_username}/.zpreztorc":

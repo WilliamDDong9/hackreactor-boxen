@@ -20,7 +20,7 @@ github "boxen", "2.0.0"
 
 github "dnsmasq",    "1.0.0"
 github "gcc",        "1.0.0"
-github "git",        "1.2.2"
+github "git",        "1.1.0"
 github "homebrew",   "1.1.2"
 github "hub",        "1.0.0"
 github "inifile",    "1.0.0"

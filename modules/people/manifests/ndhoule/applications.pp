@@ -46,8 +46,6 @@ class people::ndhoule::applications {
       'cowsay',
       'gnu-sed',
       'heroku-toolbelt',
-      'lynx',
-      'mercurial',
       'nailgun',
       'readline',
       'reattach-to-user-namespace',
@@ -61,76 +59,60 @@ class people::ndhoule::applications {
   }
 
   # NPM Packages
-  nodejs::module { 'chai':
-    node_version => 'v0.10'
-  }
+  nodejs::module {
+    'chai':
+      node_version => 'v0.10';
 
-  nodejs::module { 'coffee-script':
-    node_version => 'v0.10'
-  }
+    'coffee-script':
+      node_version => 'v0.10';
 
-  nodejs::module { 'coffeelint':
-    node_version => 'v0.10'
-  }
+    'coffeelint':
+      node_version => 'v0.10';
 
-  nodejs::module { 'docco':
-    node_version => 'v0.10'
-  }
+    'docco':
+      node_version => 'v0.10';
 
-  nodejs::module { 'express':
-    node_version => 'v0.10'
-  }
+    'express':
+      node_version => 'v0.10';
 
-  nodejs::module { 'grunt-cli':
-    node_version => 'v0.10'
-  }
+    'grunt-cli':
+      node_version => 'v0.10';
 
-  nodejs::module { 'grunt-init':
-    node_version => 'v0.10'
-  }
+    'grunt-init':
+      node_version => 'v0.10';
 
-  nodejs::module { 'jscover':
-    node_version => 'v0.10'
-  }
+    'jscover':
+      node_version => 'v0.10';
 
-  nodejs::module { 'jsctags':
-    node_version => 'v0.10'
-  }
+    'jsctags':
+      node_version => 'v0.10';
 
-  nodejs::module { 'jshint':
-    node_version => 'v0.10'
-  }
+    'jshint':
+      node_version => 'v0.10';
 
-  nodejs::module { 'meteorite':
-    node_version => 'v0.10'
-  }
+    'meteorite':
+      node_version => 'v0.10';
 
-  nodejs::module { 'mocha':
-    node_version => 'v0.10'
-  }
+    'mocha':
+      node_version => 'v0.10';
 
-  nodejs::module { 'node-inspector':
-    node_version => 'v0.10'
-  }
+    'node-inspector':
+      node_version => 'v0.8';
 
-  nodejs::module { 'requirejs':
-    node_version => 'v0.10'
-  }
+    'requirejs':
+      node_version => 'v0.10';
 
-  nodejs::module { 'supervisor':
-    node_version => 'v0.10'
-  }
+    'supervisor':
+      node_version => 'v0.10';
 
-  nodejs::module { 'uglify-js':
-    node_version => 'v0.10'
-  }
+    'uglify-js':
+      node_version => 'v0.10';
 
-  nodejs::module { 'lodash':
-    node_version => 'v0.10'
-  }
+    'lodash':
+      node_version => 'v0.10';
 
-  nodejs::module { 'webdriverjs':
-    node_version => 'v0.10'
+    'webdriverjs':
+      node_version => 'v0.10';
   }
 
 }
