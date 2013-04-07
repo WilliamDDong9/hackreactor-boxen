@@ -28,7 +28,7 @@ class people::ndhoule::applications {
   include firefox
   include fluid
   include flux
-  include iterm2::stable
+  include iterm2::dev
   include macvim
   include mou
   include pckeyboardhack
