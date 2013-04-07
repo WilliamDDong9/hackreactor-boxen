@@ -7,7 +7,7 @@ class people::ndhoule::repositories (
   notify { 'class people::ndhoule::repositories declared': }
 
   repository { "${my_sourcedir}/dotfiles":
-    source => 'ndhoule/dotfiles',
+    source => 'ndhoule/dotfiles.git',
   }
 
   # TODO: Clone recursively
