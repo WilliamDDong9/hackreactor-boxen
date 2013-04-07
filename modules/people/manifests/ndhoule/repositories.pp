@@ -6,17 +6,16 @@ class people::ndhoule::repositories (
 
   notify { 'class people::ndhoule::repositories declared': }
 
-  repository {
-    "dotfiles":
-      source   => 'ndhoule/dotfiles',
-      path     => "${my_sourcedir}/dotfiles",
-      provider => git;
+  repository {"dotfiles":
+    source   => 'ndhoule/dotfiles',
+    path     => "${my_sourcedir}/dotfiles",
+    provider => git,
+  }
 
-    "zprezto":
-      source   => 'ndhoule/prezto',
-      path     => "${my_sourcedir}/zprezto",
-      require  => Repository["dotfiles"],
-      provider => git,
+  repository { "zprezto":
+    source   => 'ndhoule/prezto',
+    path     => "${my_sourcedir}/zprezto",
+    provider => git,
   }
 
   file { "/Users/${my_username}/.gitignore.global":
