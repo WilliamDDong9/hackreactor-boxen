@@ -8,9 +8,9 @@ class people::ndhoule::files (
     ensure  => directory,
   }
 
-  file { "/tmp":
+  file { "${my_homedir}/tmp":
     ensure  => link,
-    target  => "${my_homedir}/tmp",
+    target  => "/tmp",
   }
 
   file { "${my_homedir}/ephemeral":
