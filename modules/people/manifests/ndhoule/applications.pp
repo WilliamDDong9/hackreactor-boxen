@@ -44,10 +44,8 @@ class people::ndhoule::applications {
     [
       'coreutils',
       'cowsay',
-      'git-flow',
       'gnu-sed',
       'heroku-toolbelt',
-      'leiningen',
       'lynx',
       'mercurial',
       'nailgun',
