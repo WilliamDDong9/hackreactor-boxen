@@ -82,6 +82,7 @@ class people::ndhoule::config (
       type   => 'bool',
       user   => $::boxen_user;
 
+    # TODO: Fails
     'Automatically quit printer app once all print jobs are complete':
       ensure => present,
       key    => 'Quit When Finished',
@@ -486,6 +487,7 @@ class people::ndhoule::config (
       type   => 'bool',
       user   => $::boxen_user;
 
+    # TODO: Can't ensure present with an empty value
     'Wipe all (default) app icons from the Dock':
       ensure => present,
       key    => 'persistent-apps',
@@ -704,6 +706,7 @@ class people::ndhoule::config (
     command => '/usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:showItemInfo true" ~/Library/Preferences/com.apple.finder.plist',
   }
 
+  # TODO: Failure
   exec { 'Show item info near icons in other icon views':
     command => '/usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:showItemInfo true" ~/Library/Preferences/com.apple.finder.plist',
   }
@@ -720,6 +723,7 @@ class people::ndhoule::config (
     command => '/usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist',
   }
 
+  # TODO: Fails
   exec { 'Enable snap-to-grid for icons in other icon views':
     command => '/usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist',
   }
@@ -732,6 +736,7 @@ class people::ndhoule::config (
     command => '/usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:gridSpacing 100" ~/Library/Preferences/com.apple.finder.plist',
   }
 
+  # TODO: Fails
   exec { 'Increase grid spacing for icons in other icon views':
     command => '/usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:gridSpacing 100" ~/Library/Preferences/com.apple.finder.plist',
   }
@@ -740,6 +745,7 @@ class people::ndhoule::config (
     command => '/usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:iconSize 64" ~/Library/Preferences/com.apple.finder.plist',
   }
 
+  # TODO: Fails
   exec { 'Increase the size of icons in other icon views':
     command => '/usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:iconSize 64" ~/Library/Preferences/com.apple.finder.plist',
   }
