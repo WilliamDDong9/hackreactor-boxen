@@ -14,15 +14,9 @@ class people::ndhoule::repositories (
 
     "zprezto":
       source   => 'ndhoule/prezto',
-      path     => "${my_sourcedir}/dotfiles/zprezto",
+      path     => "${my_sourcedir}/zprezto",
       require  => Repository["dotfiles"],
       provider => git,
-  }
-
-  file { "/Users/${my_username}/.gitconfig":
-    ensure  => link,
-    target  => "${my_sourcedir}/dotfiles/gitconfig",
-    require => Repository["dotfiles"],
   }
 
   file { "/Users/${my_username}/.gitignore.global":
@@ -75,8 +69,8 @@ class people::ndhoule::repositories (
 
   file { "/Users/${my_username}/.zprezto":
     ensure  => link,
-    target  => "${my_sourcedir}/dotfiles/zprezto",
-    require => Repository["dotfiles"],
+    target  => "${my_sourcedir}/zprezto",
+    require => Repository["zprezto"],
   }
 
   file { "/Users/${my_username}/.zpreztorc":
