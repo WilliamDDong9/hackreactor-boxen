@@ -9,12 +9,12 @@ class people::ndhoule::repositories (
   repository {
     "dotfiles":
       source   => 'ndhoule/dotfiles',
-      path     => "${my_sourcedir}/dotfiles"
+      path     => "${my_sourcedir}/dotfiles",
       provider => git;
 
     "zprezto":
       source   => 'ndhoule/prezto',
-      path     => "${my_sourcedir}/dotfiles/zprezto"
+      path     => "${my_sourcedir}/dotfiles/zprezto",
       require  => Repository["dotfiles"],
       provider => git,
   }
