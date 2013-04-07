@@ -6,7 +6,6 @@ class people::ndhoule::config (
 
   notify { 'class people::ndhoule::config declared': }
 
-
   # OS X Settings
 
   ## Miscellaneous system settings

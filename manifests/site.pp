@@ -49,34 +49,41 @@ Service {
 Homebrew::Formula <| |> -> Package <| |>
 
 node default {
-  # core modules, needed for most things
+  # Core Boxen modules, needed for most installations
   include dnsmasq
   include git
   include nginx
 
-  # fail if FDE is not enabled
+  # Fail if full disk encryption is not enabled
   if $::root_encrypted == 'no' {
     fail('Please enable full disk encryption and try again')
   }
 
-  # node versions
+  # Install Node via nodenv
   include nodejs::v0_10
   include nodejs::v0_8
 
-  # default ruby versions
+  # Install Ruby via rbenv
   include ruby::1_9_3
   include ruby::2_0_0
 
-  # common, useful packages
+  # Set Ruby 1.9.3 as default version
+  class { 'ruby::global':
+      version => '1.9.3'
+  }
+
+  # Homebrew packages
   package {
     [
       'ack',
       'findutils',
-      'gnu-tar'
+      'gnu-tar',
+      'cmake'
     ]:
   }
 
-  file { "${boxen::config::srcdir}/our-boxen":
+  # Create symlink to boxen in ${HOME}/src (or whatever source directory is set to)
+  file { "${boxen::config::srcdir}/my-boxen":
     ensure => link,
     target => $boxen::config::repodir
   }

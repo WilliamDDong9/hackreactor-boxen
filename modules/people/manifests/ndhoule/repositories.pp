@@ -6,16 +6,26 @@ class people::ndhoule::repositories (
 
   notify { 'class people::ndhoule::repositories declared': }
 
-  repository {"dotfiles":
-    source   => 'ndhoule/dotfiles',
-    path     => "${my_sourcedir}/dotfiles",
-    provider => git,
+  git::config::global {
+    'user.name':          value => 'Nathan Houle';
+    'user.email':         value => 'nathan@nathanhoule.com';
+    'core.editor':        value => 'vim';
+    'core.pager':         value => 'vimpager';
+    'alias.lp':           value => 'log -p';
+    'color.ui':           value => 'true';
+    'merge.tool':         value => 'Kaleidoscope';
+    'mergetool.prompt':   value => 'false';
+    'diff.tool':          value => 'Kaleidoscope';
+    'difftool.prompt':    value => 'false';
   }
 
-  repository { "zprezto":
-    source   => 'ndhoule/prezto',
-    path     => "${my_sourcedir}/zprezto",
-    provider => git,
+  repository {
+    "dotfiles":
+      source   => 'ndhoule/dotfiles',
+      path     => "${my_sourcedir}/dotfiles";
+    "zprezto":
+      source   => 'ndhoule/prezto',
+      path     => "${my_sourcedir}/zprezto",
   }
 
   file { "/Users/${my_username}/.gitignore.global":
@@ -42,11 +52,11 @@ class people::ndhoule::repositories (
     require => Repository["dotfiles"],
   }
 
-  file { "/Users/${my_username}/.vim":
-    ensure  => link,
-    target  => "${my_sourcedir}/dotfiles/vim",
-    require => Repository["dotfiles"],
-  }
+  #file { "/Users/${my_username}/.vim":
+  #  ensure  => link,
+  #  target  => "${my_sourcedir}/dotfiles/vim",
+  #  require => Repository["dotfiles"],
+  #}
 
   file { "/Users/${my_username}/.vimrc":
     ensure  => link,
