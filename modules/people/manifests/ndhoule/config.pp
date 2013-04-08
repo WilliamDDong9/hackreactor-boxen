@@ -161,11 +161,22 @@ class people::ndhoule::config (
       type   => 'int',
       user   => $::boxen_user;
 
-  ###############################################################################
-  # Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
-  ###############################################################################
+    # Trackpad, mouse, keyboard, Bluetooth accessories, and input
+    'Trackpad: Disable tap to click':
+      ensure => present,
+      key    => 'Clicking',
+      domain => 'com.apple.driver.AppleBluetoothMultitouch.trackpad',
+      value  => 'false',
+      type   => 'bool',
+      user   => $::boxen_user;
 
-  # Trackpad: swipe between pages with three fingers
+    'Disable tap to click globally':
+      ensure => present,
+      key    => 'com.apple.mouse.tapBehavior',
+      domain => 'NSGlobalDomain',
+      value  => '0',
+      type   => 'int',
+      user   => $::boxen_user;
 
     'Trackpad: swipe between pages with three fingers':
       ensure => present,
@@ -227,7 +238,7 @@ class people::ndhoule::config (
       ensure => present,
       key    => 'KeyRepeat',
       domain => 'NSGlobalDomain',
-      value  => '0',
+      value  => '1',
       type   => 'int',
       user   => $::boxen_user;
 
@@ -444,8 +455,52 @@ class people::ndhoule::config (
       user   => $::boxen_user;
 
 
-    ## Dock & Hot corners
-    # TODO: Add hot corners
+    ## Dock, Dashboard, and Hot Corners
+
+    # Hot corners
+      # Possible values:
+      #  0: no-op
+      #  2: Mission Control
+      #  3: Show application windows
+      #  4: Desktop
+      #  5: Start screen saver
+      #  6: Disable screen saver
+      #  7: Dashboard
+      # 10: Put display to sleep
+      # 11: Launchpad
+      # 12: Notification Center
+    'Set top left hot corner action':
+      ensure => present,
+      key    => 'wvous-tl-corner',
+      domain => 'com.apple.dock',
+      value  => '2',
+      type   => 'int',
+      user   => $::boxen_user;
+
+    'Set top left hot corner modifier':
+      ensure => present,
+      key    => 'wvous-tl-modifier',
+      domain => 'com.apple.dock',
+      value  => '0',
+      type   => 'int',
+      user   => $::boxen_user;
+
+    'Set bottm left hot corner action':
+      ensure => present,
+      key    => 'wvous-bl-corner',
+      domain => 'com.apple.dock',
+      value  => '10',
+      type   => 'int',
+      user   => $::boxen_user;
+
+    'Set bottom left hot corner modifier':
+      ensure => present,
+      key    => 'wvous-bl-modifier',
+      domain => 'com.apple.dock',
+      value  => '0',
+      type   => 'int',
+      user   => $::boxen_user;
+
     'Enable highlight hover effect for the grid view of a stack (Dock)':
       ensure => present,
       key    => 'mouse-over-hilite-stack',
@@ -509,6 +564,30 @@ class people::ndhoule::config (
       domain => 'com.apple.dock',
       value  => 'false',
       type   => 'bool',
+      user   => $::boxen_user;
+
+    'Disable the dashboard':
+      ensure => present,
+      key    => 'mcx-disabled',
+      domain => 'com.apple.dashboard',
+      value  => 'true',
+      type   => 'bool',
+      user   => $::boxen_user;
+
+    'Enable dock autohide':
+      ensure => present,
+      key    => 'autohide',
+      domain => 'com.apple.dock',
+      value  => 'true',
+      type   => 'bool',
+      user   => $::boxen_user;
+
+    'Eliminate Dock autohide delay':
+      ensure => present,
+      key    => 'autohide-delay',
+      domain => 'com.apple.dock',
+      value  => '0',
+      type   => 'float',
       user   => $::boxen_user;
 
     'Don’t show Dashboard as a Space':

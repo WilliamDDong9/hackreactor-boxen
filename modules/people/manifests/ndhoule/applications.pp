@@ -14,6 +14,7 @@ class people::ndhoule::applications {
   include mysql
   include phantomjs
   include postgresql
+  include python
   include tmux
   include wget
   include zsh
