@@ -7,16 +7,21 @@ class people::ndhoule::repositories (
   notify { 'class people::ndhoule::repositories declared': }
 
   git::config::global {
-    'user.name':          value => 'Nathan Houle';
-    'user.email':         value => 'nathan@nathanhoule.com';
-    'core.editor':        value => 'vim';
-    'core.pager':         value => 'vimpager';
-    'alias.lp':           value => 'log -p';
-    'color.ui':           value => 'true';
-    'merge.tool':         value => 'Kaleidoscope';
-    'mergetool.prompt':   value => 'false';
-    'diff.tool':          value => 'Kaleidoscope';
-    'difftool.prompt':    value => 'false';
+    'user.name':        value => 'Nathan Houle';
+    'user.email':       value => 'nathan@nathanhoule.com';
+    'core.editor':      value => 'vim';
+    'core.pager':       value => 'vimpager';
+    'color.ui':         value => 'true';
+    'merge.tool':       value => 'Kaleidoscope';
+    'mergetool.prompt': value => 'false';
+    'diff.tool':        value => 'Kaleidoscope';
+    'difftool.prompt':  value => 'false';
+
+    # Aliases
+    'alias.lp':         value => 'log -p';
+    'alias.snapshot':   value => '!git stash save "snapshot: $(date)" && git stash apply "stash@{0}"';
+    'alias.ours':       value => '"!f() { git checkout --ours $@ && git add $@; }; f"';
+    'alias.theirs':     value => '"!f() { git checkout --theirs $@ && git add $@; }; f"';
   }
 
   repository {
@@ -52,11 +57,11 @@ class people::ndhoule::repositories (
     require => Repository["dotfiles"],
   }
 
-  #file { "/Users/${my_username}/.vim":
-  #  ensure  => link,
-  #  target  => "${my_sourcedir}/dotfiles/vim",
-  #  require => Repository["dotfiles"],
-  #}
+  file { "/Users/${my_username}/.slate":
+    ensure  => link,
+    target  => "${my_sourcedir}/dotfiles/slate",
+    require => Repository["dotfiles"],
+  }
 
   file { "/Users/${my_username}/.vimrc":
     ensure  => link,

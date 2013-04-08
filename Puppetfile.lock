@@ -39,6 +39,11 @@ GITHUBTARBALL
     ctags (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-cyberduck
+  specs:
+    cyberduck (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-dnsmasq
   specs:
     dnsmasq (1.0.0)
@@ -174,6 +179,11 @@ GITHUBTARBALL
     skype (1.0.2)
 
 GITHUBTARBALL
+  remote: boxen/puppet-slate
+  specs:
+    slate (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-sublime_text_2
   specs:
     sublime_text_2 (1.1.0)
@@ -234,11 +244,6 @@ GITHUBTARBALL
     zsh (1.0.0)
 
 GITHUBTARBALL
-  remote: fromonesrc/puppet-cyberduck
-  specs:
-    cyberduck (1.0.0)
-
-GITHUBTARBALL
   remote: jhubert/puppet-clipmenu
   specs:
     clipmenu (1.0.0)
@@ -292,6 +297,7 @@ DEPENDENCIES
   ruby (= 3.3.1)
   sequel_pro (= 1.0.0)
   skype (= 1.0.2)
+  slate (= 1.0.0)
   stdlib (= 3.2.0)
   sublime_text_2 (= 1.1.0)
   sudo (= 1.0.0)

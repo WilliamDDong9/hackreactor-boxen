@@ -36,6 +36,7 @@ class people::ndhoule::applications {
   include rdio
   include sequel_pro
   include skype
+  include slate
   include sublime_text_2
   include transmission
   include tunnelblick
