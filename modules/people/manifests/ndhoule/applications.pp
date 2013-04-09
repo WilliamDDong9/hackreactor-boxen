@@ -43,9 +43,9 @@ class people::ndhoule::applications {
   include vim
   include virtualbox
   include vlc
+  include vmware_fusion
 
   # Vim Packages
-  vim::bundle { 'airblade/vim-gitgutter.git': }
   vim::bundle { 'Bogdanp/rbrepl.vim.git': }
   vim::bundle { 'digitaltoad/vim-jade.git': }
   vim::bundle { 'epeli/slimux.git': }
@@ -57,7 +57,6 @@ class people::ndhoule::applications {
   vim::bundle { 'kien/ctrlp.vim': }
   vim::bundle { 'kien/rainbow_parentheses.vim.git': }
   vim::bundle { 'Lokaltog/vim-powerline.git': }
-  vim::bundle { 'majutsushi/tagbar.git': }
   vim::bundle { 'mattn/zencoding-vim.git': }
   vim::bundle { 'mileszs/ack.vim.git': }
   vim::bundle { 'ndhoule/vim-ragtag.git': }
@@ -149,6 +148,9 @@ class people::ndhoule::applications {
 
     'node-inspector':
       node_version => 'v0.8';
+
+    'node-jasmine':
+      node_version => 'v0.10';
 
     'requirejs':
       node_version => 'v0.10';

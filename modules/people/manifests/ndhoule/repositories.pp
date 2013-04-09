@@ -33,12 +33,6 @@ class people::ndhoule::repositories (
       path     => "${my_sourcedir}/zprezto",
   }
 
-  file { "/Users/${my_username}/.gitignore.global":
-    ensure  => link,
-    target  => "${my_sourcedir}/dotfiles/gitignore.global",
-    require => Repository["dotfiles"],
-  }
-
   file { "/Users/${my_username}/.gvimrc":
     ensure  => link,
     target  => "${my_sourcedir}/dotfiles/gvimrc",
@@ -66,12 +60,6 @@ class people::ndhoule::repositories (
   file { "/Users/${my_username}/.vimrc":
     ensure  => link,
     target  => "${my_sourcedir}/dotfiles/vimrc",
-    require => Repository["dotfiles"],
-  }
-
-  file { "/Users/${my_username}/.vimrc.bundles":
-    ensure  => link,
-    target  => "${my_sourcedir}/dotfiles/vimrc.bundles",
     require => Repository["dotfiles"],
   }
 

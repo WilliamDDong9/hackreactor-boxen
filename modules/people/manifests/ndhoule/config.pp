@@ -485,7 +485,7 @@ class people::ndhoule::config (
       type   => 'int',
       user   => $::boxen_user;
 
-    'Set bottm left hot corner action':
+    'Set bottom left hot corner action':
       ensure => present,
       key    => 'wvous-bl-corner',
       domain => 'com.apple.dock',
@@ -501,7 +501,7 @@ class people::ndhoule::config (
       type   => 'int',
       user   => $::boxen_user;
 
-    'Enable highlight hover effect for the grid view of a stack (Dock)':
+    'Enable alternate-style stack view in Dock':
       ensure => present,
       key    => 'mouse-over-hilite-stack',
       domain => 'com.apple.dock',
@@ -522,7 +522,7 @@ class people::ndhoule::config (
       key    => 'use-new-list-stack',
       domain => 'com.apple.dock',
       value  => 'YES',
-      type   => 'string',
+      type   => 'bool',
       user   => $::boxen_user;
 
     'Enable spring loading for all Dock items':
