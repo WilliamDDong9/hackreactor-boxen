@@ -147,7 +147,7 @@ class people::ndhoule::applications {
       node_version => 'v0.10';
 
     'node-inspector':
-      node_version => 'v0.8';
+      node_version => 'v0.10';
 
     'node-jasmine':
       node_version => 'v0.10';
