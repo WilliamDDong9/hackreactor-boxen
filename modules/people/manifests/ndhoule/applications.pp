@@ -87,6 +87,7 @@ class people::ndhoule::applications {
   ## Themes
   vim::bundle { 'altercation/vim-colors-solarized.git': }
   vim::bundle { 'tomasr/molokai.git': }
+  vim::bundle { 'trapd00r/neverland-vim-theme.git': }
 
 
   # Homebrew Packages
