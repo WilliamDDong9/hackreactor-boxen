@@ -32,6 +32,7 @@ class people::ndhoule::applications {
   include iterm2::dev
   include macvim
   include mou
+  include openoffice
   include pckeyboardhack
   include rdio
   include sequel_pro
