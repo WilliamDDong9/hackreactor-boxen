@@ -33,64 +33,63 @@ class people::ndhoule::repositories (
       path     => "${my_sourcedir}/zprezto",
   }
 
-  file { "/Users/${my_username}/.gvimrc":
+  file { "${my_homedir}/.gvimrc":
     ensure  => link,
     target  => "${my_sourcedir}/dotfiles/gvimrc",
     require => Repository["dotfiles"],
   }
 
-  file { "/Users/${my_username}/.login_conf":
+  file { "${my_homedir}/.login_conf":
     ensure  => link,
     target  => "${my_sourcedir}/dotfiles/login_conf",
     require => Repository["dotfiles"],
   }
 
-  file { "/Users/${my_username}/.tmux.conf":
+  file { "${my_homedir}/.tmux.conf":
     ensure  => link,
     target  => "${my_sourcedir}/dotfiles/tmux.conf",
     require => Repository["dotfiles"],
   }
 
-  file { "/Users/${my_username}/.slate":
+  file { "${my_homedir}/.slate":
     ensure  => link,
     target  => "${my_sourcedir}/dotfiles/slate",
     require => Repository["dotfiles"],
   }
 
-  file { "/Users/${my_username}/.vimrc":
+  file { "${my_homedir}/.vimrc":
     ensure  => link,
     target  => "${my_sourcedir}/dotfiles/vimrc",
     require => Repository["dotfiles"],
   }
 
-  file { "/Users/${my_username}/.zlogin":
+  file { "${my_homedir}/.zlogin":
     ensure  => link,
     target  => "${my_sourcedir}/dotfiles/zlogin",
     require => Repository["dotfiles"],
   }
 
-  file { "/Users/${my_username}/.zprezto":
+  file { "${my_homedir}/.zprezto":
     ensure  => link,
     target  => "${my_sourcedir}/zprezto",
     require => Repository["zprezto"],
   }
 
-  file { "/Users/${my_username}/.zpreztorc":
+  file { "${my_homedir}/.zpreztorc":
     ensure  => link,
     target  => "${my_sourcedir}/dotfiles/zpreztorc",
     require => Repository["dotfiles"],
   }
 
-  file { "/Users/${my_username}/.zshenv":
+  file { "${my_homedir}/.zshenv":
     ensure  => link,
     target  => "${my_sourcedir}/dotfiles/zshenv",
     require => Repository["dotfiles"],
   }
 
-  file { "/Users/${my_username}/.zshrc":
+  file { "${my_homedir}/.zshrc":
     ensure  => link,
     target  => "${my_sourcedir}/dotfiles/zshrc",
     require => Repository["dotfiles"],
   }
-
 }
