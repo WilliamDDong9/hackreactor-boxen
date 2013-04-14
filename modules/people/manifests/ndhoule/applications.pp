@@ -48,6 +48,9 @@ class people::ndhoule::applications {
 
   # Vim Packages
   vim::bundle { 'Bogdanp/rbrepl.vim.git': }
+  vim::bundle { 'Lokaltog/vim-powerline.git': }
+  vim::bundle { 'Raimondi/delimitMate.git': }
+  vim::bundle { 'Valloric/YouCompleteMe.git': }
   vim::bundle { 'digitaltoad/vim-jade.git': }
   vim::bundle { 'epeli/slimux.git': }
   vim::bundle { 'godlygeek/tabular': }
@@ -57,7 +60,6 @@ class people::ndhoule::applications {
   vim::bundle { 'kchmck/vim-coffee-script.git': }
   vim::bundle { 'kien/ctrlp.vim': }
   vim::bundle { 'kien/rainbow_parentheses.vim.git': }
-  vim::bundle { 'Lokaltog/vim-powerline.git': }
   vim::bundle { 'mattn/zencoding-vim.git': }
   vim::bundle { 'mileszs/ack.vim.git': }
   vim::bundle { 'ndhoule/vim-ragtag.git': }
@@ -65,21 +67,19 @@ class people::ndhoule::applications {
   vim::bundle { 'scrooloose/nerdtree': }
   vim::bundle { 'scrooloose/syntastic.git': }
   vim::bundle { 'slim-template/vim-slim.git': }
-  vim::bundle { 'Townk/vim-autoclose.git': }
   vim::bundle { 'tpope/vim-fugitive': }
   vim::bundle { 'tpope/vim-haml.git': }
   vim::bundle { 'tpope/vim-repeat.git': }
   vim::bundle { 'tpope/vim-surround': }
-  vim::bundle { 'Valloric/YouCompleteMe.git': }
   vim::bundle { 'vim-ruby/vim-ruby': }
+  vim::bundle { 'vim-scripts/Rename.git': }
+  vim::bundle { 'vim-scripts/YankRing.vim.git': }
   vim::bundle { 'vim-scripts/bufexplorer.zip.git': }
   vim::bundle { 'vim-scripts/bufkill.vim.git': }
   vim::bundle { 'vim-scripts/fakeclip.git': }
   vim::bundle { 'vim-scripts/guicolorscheme.vim': }
   vim::bundle { 'vim-scripts/jQuery.git': }
-  vim::bundle { 'vim-scripts/Rename.git': }
   vim::bundle { 'vim-scripts/scratch.vim.git': }
-  vim::bundle { 'vim-scripts/YankRing.vim.git': }
   ## Snipmate Plugins
   vim::bundle { 'garbas/vim-snipmate.git': }
   vim::bundle { 'MarcWeber/vim-addon-mw-utils.git': }
