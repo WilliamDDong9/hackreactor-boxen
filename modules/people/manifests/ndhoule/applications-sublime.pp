@@ -1,10 +1,10 @@
-class people::ndhoule::config-sublime (
+class people::ndhoule::applications-sublime (
   $my_sourcedir   = $people::ndhoule::params::my_sourcedir,
   $my_homedir     = $people::ndhoule::params::my_homedir,
   $my_username    = $people::ndhoule::params::my_username
 ) {
 
-  notify { 'class people::ndhoule::sublime-config declared': }
+  notify { 'class people::ndhoule::applications-sublime declared': }
 
   define addpkg {
     $packagedir = "Library/Application Support/Sublime Text 2/Packages/"
