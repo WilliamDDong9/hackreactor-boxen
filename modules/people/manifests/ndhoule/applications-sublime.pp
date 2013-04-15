@@ -45,6 +45,7 @@ class people::ndhoule::applications-sublime (
       "nathos/sass-textmate-bundle",
       "SublimeLinter/SublimeLinter",
       "SublimeText/TrailingSpaces",
+      "ttscoff/MarkdownEditing",
     ]:
   }
 
