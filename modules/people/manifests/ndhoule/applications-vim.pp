@@ -22,6 +22,7 @@ class people::ndhoule::applications-vim {
   vim::bundle { 'scrooloose/nerdtree': }
   vim::bundle { 'scrooloose/syntastic.git': }
   vim::bundle { 'slim-template/vim-slim.git': }
+  vim::bundle { 'terryma/vim-multiple-cursors.git': }
   vim::bundle { 'tpope/vim-fugitive': }
   vim::bundle { 'tpope/vim-haml.git': }
   vim::bundle { 'tpope/vim-repeat.git': }
