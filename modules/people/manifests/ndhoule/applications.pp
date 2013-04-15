@@ -5,26 +5,19 @@ class people::ndhoule::applications {
   include clojure
   include csshx
   include ctags
-  include hub
-  include java
   include mongodb
   include mysql
   include phantomjs
   include postgresql
-  include python
   include tmux
-  include wget
-  include xquartz
   include zsh
 
-  include alfred
+  #include alfred  # TODO: Replace with 2.0 when available
   include appcleaner
-  include chrome
-  include chrome::canary
   include clipmenu
   include colloquy
+  include chrome::canary
   include cyberduck
-  include firefox
   include fluid
   include flux
   include iterm2::dev
@@ -48,18 +41,14 @@ class people::ndhoule::applications {
   # Homebrew Packages
   package {
     [
-      'coreutils',
       'cowsay',
-      'gnu-sed',
       'heroku-toolbelt',
       'nailgun',
-      'readline',
       'reattach-to-user-namespace',
       'rlwrap',
       'selenium-server-standalone',
       'ssh-copy-id',
       'sshfs',
-      'tree',
       'vimpager'
     ]:
   }

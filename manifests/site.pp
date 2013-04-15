@@ -73,6 +73,17 @@ node default {
       version => '1.9.3'
   }
 
+  # Install a homebrewed python
+  include python
+  include xquartz
+
+  # Other modules
+  include hub
+  include java
+  include wget
+  include chrome
+  include firefox
+
   # Homebrew packages
   package {
     [
@@ -80,6 +91,10 @@ node default {
       'findutils',
       'gnu-tar',
       'cmake'
+      'readline',
+      'gnu-sed',
+      'coreutils',
+      'tree'
     ]:
   }
 
