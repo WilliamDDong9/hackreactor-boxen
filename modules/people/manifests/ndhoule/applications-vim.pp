@@ -18,11 +18,11 @@ class people::ndhoule::applications-vim {
   vim::bundle { 'mattn/zencoding-vim.git': }
   vim::bundle { 'mileszs/ack.vim.git': }
   vim::bundle { 'ndhoule/vim-ragtag.git': }
-  vim::bundle { 'scrooloose/nerdcommenter': }
   vim::bundle { 'scrooloose/nerdtree': }
   vim::bundle { 'scrooloose/syntastic.git': }
   vim::bundle { 'slim-template/vim-slim.git': }
   vim::bundle { 'terryma/vim-multiple-cursors.git': }
+  vim::bundle { 'tomtom/tcomment_vim.git': }
   vim::bundle { 'tpope/vim-fugitive': }
   vim::bundle { 'tpope/vim-haml.git': }
   vim::bundle { 'tpope/vim-repeat.git': }
