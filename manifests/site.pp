@@ -90,7 +90,7 @@ node default {
       'ack',
       'findutils',
       'gnu-tar',
-      'cmake'
+      'cmake',
       'readline',
       'gnu-sed',
       'coreutils',
