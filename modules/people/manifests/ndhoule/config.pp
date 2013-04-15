@@ -509,6 +509,14 @@ class people::ndhoule::config (
       type   => 'bool',
       user   => $::boxen_user;
 
+    'Disable auto-rearrange on Spaces':
+      ensure => present,
+      key    => 'mru-spaces',
+      domain => 'com.apple.dock',
+      value  => 'false',
+      type   => 'bool',
+      user   => $::boxen_user;
+
     'Set the icon size of Dock items to 40 pixels':
       ensure => present,
       key    => 'tilesize',
