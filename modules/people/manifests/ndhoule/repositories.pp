@@ -26,8 +26,8 @@ class people::ndhoule::repositories (
 
   repository {
     "powerline-fonts":
-      source   => 'Lokaltog/powerline-fonts',
-      path     => "/Library/Fonts/powerline-fonts";
+      source   => 'https://gist.github.com/1630581.git',
+      path     => "/Library/Fonts/dejavu-sans-mono-powerline";
     "dotfiles":
       source   => 'ndhoule/dotfiles',
       path     => "${my_sourcedir}/dotfiles";
