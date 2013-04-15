@@ -92,4 +92,11 @@ class people::ndhoule::repositories (
     target  => "${my_sourcedir}/dotfiles/zshrc",
     require => Repository["dotfiles"],
   }
+
+  file { "${my_homedir}/Library/Preferences/com.googlecode.iterm2.plist":
+    ensure  => link,
+    target  => "${my_sourcedir}/dotfiles/osx/com.googlecode.iterm2.plist",
+    require => Repository["dotfiles"],
+  }
+
 }
