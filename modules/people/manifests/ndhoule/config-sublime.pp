@@ -21,21 +21,17 @@ class people::ndhoule::config-sublime (
   }
 
   $base = "/Users/${::luser}/Library/Application Support"
-  $structure = [ "${base}/Sublime Text 2", "${base}/Sublime Text 2/Packages" ]
-
-  file { $structure:
-    ensure  => 'directory',
-    owner   => "${::luser}",
-    mode    => '0755',
+  file { [
+      "${base}/Sublime Text 2",
+      "${base}/Sublime Text 2/Packages",
+    ]:
+    ensure => "directory"
   }->
 
-  file { "${base}/Sublime Text 2/Packages/User/Preferences.sublime-settings":
-      content  => '
-{
-  "trim_trailing_white_space_on_save": true,
-  "tab_size": 2,
-  "translate_tabs_to_spaces": true
-}'
+  file { "${base}/Sublime Text 2/Packages/User":
+    ensure  => link,
+    target  => "${my_sourcedir}/dotfiles/st2/Packages/User",
+    require => Repository["dotfiles"],
   }
 
   addpkg {
