@@ -5,7 +5,7 @@
 # ENV['BOXEN_HOME'] = '/opt/boxen'
 
 # Change the repo boxen will use.
-# ENV['BOXEN_REPO_NAME'] = 'boxen/our-boxen'
+ENV['BOXEN_REPO_NAME'] = 'ndhoule/my-boxen'
 
 # Boxen binary packaging
 # ENV["BOXEN_S3_ACCESS_KEY"] = ''
@@ -17,3 +17,9 @@
 
 # Submit audit data to an arbitrary HTTP endpoint
 # ENV["BOXEN_WEB_HOOK_URL"] = 'https://some-uri.com/boxen'
+
+# Set ports back to defaults
+# TODO: Verify this works
+ENV["BOXEN_MYSQL_PORT"] = "3306"
+ENV["BOXEN_POSTGRESQL_PORT"] = "5432"
+ENV["BOXEN_MONGODB_PORT"] = "2707"
