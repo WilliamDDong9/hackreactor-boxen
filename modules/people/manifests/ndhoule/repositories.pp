@@ -25,6 +25,9 @@ class people::ndhoule::repositories (
   }
 
   repository {
+    "powerline-fonts":
+      source   => 'Lokaltog/powerline-fonts',
+      path     => "/Library/Fonts/powerline-fonts";
     "dotfiles":
       source   => 'ndhoule/dotfiles',
       path     => "${my_sourcedir}/dotfiles";
