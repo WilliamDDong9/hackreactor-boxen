@@ -43,6 +43,7 @@ class people::ndhoule::applications-sublime (
       "facelessuser/ApplySyntax",
       "kemayo/sublime-text-2-git",
       "nathos/sass-textmate-bundle",
+      "netpro2k/SublimeBlockCursor",
       "SublimeLinter/SublimeLinter",
       "SublimeText/TrailingSpaces",
       "ttscoff/MarkdownEditing",
