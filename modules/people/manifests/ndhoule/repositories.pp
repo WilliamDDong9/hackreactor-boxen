@@ -54,9 +54,9 @@ class people::ndhoule::repositories (
     require => Repository["dotfiles"],
   }
 
-  file { "${my_homedir}/.slate":
+  file { "${my_homedir}/.slate.js":
     ensure  => link,
-    target  => "${my_sourcedir}/dotfiles/slate",
+    target  => "${my_sourcedir}/dotfiles/slate.js",
     require => Repository["dotfiles"],
   }
 
