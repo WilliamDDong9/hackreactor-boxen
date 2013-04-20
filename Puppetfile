@@ -27,7 +27,7 @@ github "inifile",    "1.0.0"
 github "nginx",      "1.1.0"
 github "nodejs",     "2.0.0"
 github "nvm",        "1.0.0"
-github "ruby",       "3.3.1"
+github "ruby",       "3.6.0"
 github "stdlib",     "3.2.0", :repo => "puppetlabs/puppetlabs-stdlib"
 github "sudo",       "1.0.0"
 
