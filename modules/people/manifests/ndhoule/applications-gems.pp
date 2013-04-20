@@ -8,6 +8,18 @@ class people::ndhoule::applications-gems {
     version => '~> 1.3.5'
   }
 
+  ruby::gem { "guard for ${version}":
+    gem     => 'guard',
+    ruby    => $version,
+    version => '~> 1.7.0'
+  }
+
+  ruby::gem { "pry for ${version}":
+    gem     => 'pry',
+    ruby    => $version,
+    version => '~> 0.9.12'
+  }
+
   ruby::gem { "rails for ${version}":
     gem     => 'rails',
     ruby    => $version,
@@ -18,12 +30,6 @@ class people::ndhoule::applications-gems {
     gem     => 'sass',
     ruby    => $version,
     version => '~> 3.2.7'
-  }
-
-  ruby::gem { "guard for ${version}":
-    gem     => 'guard',
-    ruby    => $version,
-    version => '~> 1.7.0'
   }
 
 }
