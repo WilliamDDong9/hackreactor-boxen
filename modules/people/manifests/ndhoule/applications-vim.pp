@@ -18,6 +18,7 @@ class people::ndhoule::applications-vim {
   vim::bundle { 'mattn/zencoding-vim.git': }
   vim::bundle { 'mileszs/ack.vim.git': }
   vim::bundle { 'ndhoule/vim-ragtag.git': }
+  vim::bundle { 'rodjek/vim-puppet.git': }
   vim::bundle { 'scrooloose/nerdtree': }
   vim::bundle { 'scrooloose/syntastic.git': }
   vim::bundle { 'slim-template/vim-slim.git': }
