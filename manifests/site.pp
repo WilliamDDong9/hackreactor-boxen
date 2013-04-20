@@ -73,6 +73,22 @@ node default {
       version => '1.9.3'
   }
 
+  # Install useful rbenv plugins
+  ruby::plugin { 'rbenv-vars':
+    version => 'v1.2.0',
+    source  => 'sstephenson/rbenv-vars'
+  }
+
+  ruby::plugin { 'rbenv-gem-rehash':
+    version => 'v1.0.0',
+    source  => 'sstephenson/rbenv-gem-rehash'
+  }
+
+  ruby::plugin { 'rbenv-gemset':
+    version => 'v0.3.0',
+    source  => 'jamis/rbenv-gemset'
+  }
+
   # Install a homebrewed python
   include python
   include xquartz
