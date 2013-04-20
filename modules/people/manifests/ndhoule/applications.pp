@@ -12,7 +12,7 @@ class people::ndhoule::applications {
   include tmux
   include zsh
 
-  #include alfred  # TODO: Replace with 2.0 when available
+  include alfred2
   include appcleaner
   include clipmenu
   include colloquy

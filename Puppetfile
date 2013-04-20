@@ -37,7 +37,7 @@ github "sudo",       "1.0.0"
 github "sysctl",         "1.0.0"
 github "repository",     "1.0.0"
 
-github "alfred",         "1.0.1"
+github "alfred2",        "0.0.1", :repo => "grahamgilbert/puppet-alfred2"
 github "appcleaner",     "1.0.0"
 github "chrome",         "1.1.0"
 github "clipmenu",       "1.0.0", :repo => "jhubert/puppet-clipmenu"
