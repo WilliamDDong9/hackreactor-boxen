@@ -14,7 +14,7 @@ class people::ndhoule::applications-gems {
       version => '~> 0.12.2';
 
     "compass-rails for 1.9.3":
-      gem     => 'compass',
+      gem     => 'compass-rails',
       ruby    => '1.9.3',
       version => '~> 1.0.3';
 
