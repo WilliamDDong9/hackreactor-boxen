@@ -1,10 +1,10 @@
-class people::ndhoule::repositories (
+class people::ndhoule::config::dotfiles (
   $my_sourcedir   = $people::ndhoule::params::my_sourcedir,
   $my_homedir     = $people::ndhoule::params::my_homedir,
   $my_username    = $people::ndhoule::params::my_username
 ) {
 
-  notify { 'class people::ndhoule::repositories declared': }
+  notify { 'class people::ndhoule::config::dotfiles declared': }
 
   git::config::global {
     'user.name':        value => 'Nathan Houle';
