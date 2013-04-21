@@ -1,6 +1,6 @@
-class people::ndhoule::applications-gems {
+class people::ndhoule::applications::gems {
 
-  notify { 'class people::ndhoule::applications-gems declared': }
+  notify { 'class people::ndhoule::gems declared': }
 
   ruby::gem {
     "bundler for 1.9.3":

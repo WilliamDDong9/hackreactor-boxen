@@ -1,6 +1,6 @@
-class people::ndhoule::loginitems {
+class people::ndhoule::config::loginitems {
 
-  notify { 'class people::ndhoule::loginitems declared': }
+  notify { 'class people::ndhoule::config::loginitems declared': }
 
   osx_login_item {
     'Alfred 2':

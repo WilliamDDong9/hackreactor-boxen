@@ -1,10 +1,10 @@
-class people::ndhoule::config (
+class people::ndhoule::config::osx (
   $my_homedir   = $people::ndhoule::params::my_homedir,
   $my_sourcedir = $people::ndhoule::params::my_sourcedir,
   $my_username  = $people::ndhoule::params::my_username
 ) {
 
-  notify { 'class people::ndhoule::config declared': }
+  notify { 'class people::ndhoule::config::osx declared': }
 
   # OS X Settings
 

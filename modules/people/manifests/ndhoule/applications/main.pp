@@ -1,6 +1,6 @@
-class people::ndhoule::applications {
+class people::ndhoule::applications::main {
 
-  notify { 'class people::ndhoule::applications declared': }
+  notify { 'class people::ndhoule::applications::main declared': }
 
   include clojure
   include csshx
@@ -21,7 +21,6 @@ class people::ndhoule::applications {
   include fluid
   include flux
   include iterm2::dev
-  include macvim
   include mou
   include openoffice
   include pckeyboardhack
@@ -29,10 +28,8 @@ class people::ndhoule::applications {
   include sequel_pro
   include skype
   include slate
-  include sublime_text_2
   include transmission
   include tunnelblick
-  include vim
   include virtualbox
   include vlc
   include vmware_fusion

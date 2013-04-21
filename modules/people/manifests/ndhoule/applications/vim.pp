@@ -1,6 +1,9 @@
-class people::ndhoule::applications-vim {
+class people::ndhoule::applications::vim {
 
-  notify { 'class people::ndhoule::applications-vim declared': }
+  notify { 'class people::ndhoule::applications::vim declared': }
+
+  include macvim
+  include vim
 
   vim::bundle { 'Bogdanp/rbrepl.vim.git': }
   vim::bundle { 'Lokaltog/vim-powerline.git': }
