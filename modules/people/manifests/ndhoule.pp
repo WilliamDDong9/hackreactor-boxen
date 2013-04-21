@@ -6,9 +6,10 @@ class people::ndhoule {
   include people::ndhoule::applications-npm
   include people::ndhoule::applications-sublime
   include people::ndhoule::applications-vim
-  include people::ndhoule::repositories
   include people::ndhoule::config
   include people::ndhoule::files
+  include people::ndhoule::loginitems
+  include people::ndhoule::repositories
 
   notify { 'class people::ndhoule declared': }
 
