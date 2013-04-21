@@ -254,6 +254,11 @@ GITHUBTARBALL
     alfred2 (0.0.1)
 
 GITHUBTARBALL
+  remote: grahamgilbert/puppet-dockutil
+  specs:
+    dockutil (0.1.2)
+
+GITHUBTARBALL
   remote: jhubert/puppet-clipmenu
   specs:
     clipmenu (1.0.0)
@@ -280,6 +285,7 @@ DEPENDENCIES
   ctags (= 1.0.0)
   cyberduck (= 1.0.0)
   dnsmasq (= 1.0.0)
+  dockutil (= 0.1.2)
   firefox (= 1.0.5)
   fluid (= 1.0.0)
   flux (= 0.0.1)

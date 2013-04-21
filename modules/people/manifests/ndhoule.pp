@@ -9,6 +9,7 @@ class people::ndhoule {
   include people::ndhoule::applications::npm
   include people::ndhoule::applications::sublime
   include people::ndhoule::applications::vim
+  include people::ndhoule::config::dock
   include people::ndhoule::config::loginitems
   include people::ndhoule::config::osx
 
