@@ -41,11 +41,6 @@ class people::ndhoule::config::dock {
       label   => "Notes",
       action => "remove";
 
-    'Remove Messages':
-      item => "/Applications/Messages.app",
-      label   => "Messages",
-      action => "remove";
-
     'Remove FaceTime':
       item => "/Applications/FaceTime.app",
       label   => "FaceTime",
