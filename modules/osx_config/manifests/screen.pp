@@ -5,7 +5,7 @@ class osx_config::screen {
       ensure => present,
       key    => 'askForPassword',
       domain => 'com.apple.screensaver',
-      value  => '0',
+      value  => '1',
       type   => 'int',
       user   => $::boxen_user;
 
