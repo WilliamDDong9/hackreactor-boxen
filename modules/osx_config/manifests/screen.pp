@@ -1,14 +1,6 @@
 class osx_config::screen {
 
   boxen::osx_defaults {
-    'Require password immediately after sleep or screen saver begins':
-      ensure => present,
-      key    => 'askForPassword',
-      domain => 'com.apple.screensaver',
-      value  => '1',
-      type   => 'int',
-      user   => $::boxen_user;
-
     'Save screenshots to the desktop':
       ensure => present,
       key    => 'location',

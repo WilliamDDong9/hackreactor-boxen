@@ -60,18 +60,17 @@ node default {
   }
 
   # Install Node via nodenv
-  include nodejs::v0_10
+  class { 'nodejs::global':
+    version => 'v0.10'
+  }
   include nodejs::v0_8
 
   # Install Ruby via rbenv
-  include ruby::1_8_7
-  include ruby::1_9_3
-  include ruby::2_0_0
-
-  # Set Ruby 1.9.3 as default version
   class { 'ruby::global':
       version => '1.9.3'
   }
+  include ruby::1_8_7
+  include ruby::2_0_0
 
   # Install useful rbenv plugins
   ruby::plugin { 'rbenv-vars':
