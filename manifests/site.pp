@@ -54,11 +54,6 @@ node default {
   include git
   include nginx
 
-  # Fail if full disk encryption is not enabled
-  if $::root_encrypted == 'no' {
-    fail('Please enable full disk encryption and try again')
-  }
-
   # Install Node via nodenv
   class { 'nodejs::global':
     version => 'v0.10'
