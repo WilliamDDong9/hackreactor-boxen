@@ -36,12 +36,12 @@ class people::hackreactorworkstations::config::dock (
         position => 5,
         require  => Class["colloquy"];
 
-    'Add Sublime Text 2':
-        item     => "/Applications/Sublime Text 2.app",
-        label    => "Sublime Text 2",
-        action   => "add",
-        position => 6,
-        require  => Class["sublime_text_2"];
+    # 'Add Sublime Text 2':
+    #     item     => "/Applications/Sublime Text 2.app",
+    #     label    => "Sublime Text 2",
+    #     action   => "add",
+    #     position => 6,
+    #     require  => Class["sublime_text_2"];
 
     ## Remove all default applications
     'Remove Launchpad':
