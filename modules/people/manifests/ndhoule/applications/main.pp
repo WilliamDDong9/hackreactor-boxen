@@ -18,6 +18,7 @@ class people::ndhoule::applications::main {
   include colloquy
   include chrome::canary
   include cyberduck
+  include emacs
   include fluid
   include flux
   include iterm2::dev
