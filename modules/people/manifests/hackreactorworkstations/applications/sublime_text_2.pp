@@ -18,7 +18,7 @@ class people::hackreactorworkstations::applications::sublime_text_2 (
       provider => 'shell',
       creates  => "/Users/${::luser}/${packagedir}${pkgname}",
       path     => "${boxen::config::homebrewdir}/bin",
-      require  => [Package['SublimeText2'], Class['git']],
+      require  => Class['git'],
     }
   }
 

@@ -23,11 +23,8 @@ class people::hackreactorworkstations::config::dotfiles (
   }
 
   repository {
-    "powerline-fonts":
-      source   => 'https://gist.github.com/1630581.git',
-      path     => "/Library/Fonts/dejavu-sans-mono-powerline";
     "dotfiles":
-      source   => 'hackreactor/dotfiles',
+      source   => 'hackreactor/hackreactor-dotfiles',
       path     => "${my_sourcedir}/dotfiles";
   }
 

@@ -24,7 +24,6 @@ class people::hackreactorworkstations::applications::main {
   # Homebrew Packages
   package {
     [
-      'cowsay',
       'heroku-toolbelt',
       'reattach-to-user-namespace',
       'rlwrap',
