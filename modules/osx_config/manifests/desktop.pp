@@ -1,13 +1,5 @@
 class osx_config::desktop {
 
-  exec { 'Show item info near icons on the desktop':
-    command => '/usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:showItemInfo true" ~/Library/Preferences/com.apple.finder.plist',
-  }
-
-  exec { 'Show item info near icons in icon views':
-    command => '/usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:showItemInfo true" ~/Library/Preferences/com.apple.finder.plist',
-  }
-
   exec { 'Enable snap-to-grid for icons on the desktop':
     command => '/usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist',
   }

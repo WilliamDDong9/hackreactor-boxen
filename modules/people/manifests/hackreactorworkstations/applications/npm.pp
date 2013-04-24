@@ -1,6 +1,6 @@
-class people::ndhoule::applications::npm {
+class people::hackreactorworkstations::applications::npm {
 
-  notify { 'class people::ndhoule::applications::npm declared': }
+  notify { 'class people::hackreactorworkstations::applications::npm declared': }
 
   nodejs::module {
     'chai':

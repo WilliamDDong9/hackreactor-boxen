@@ -1,10 +1,10 @@
-class people::ndhoule::applications::sublime_text_2 (
-  $my_sourcedir   = $people::ndhoule::params::my_sourcedir,
-  $my_homedir     = $people::ndhoule::params::my_homedir,
-  $my_username    = $people::ndhoule::params::my_username
+class people::hackreactorworkstations::applications::sublime_text_2 (
+  $my_sourcedir   = $people::hackreactorworkstations::params::my_sourcedir,
+  $my_homedir     = $people::hackreactorworkstations::params::my_homedir,
+  $my_username    = $people::hackreactorworkstations::params::my_username
 ) {
 
-  notify { 'class people::ndhoule::applications::sublime_text_2 declared': }
+  notify { 'class people::hackreactorworkstations::applications::sublime_text_2 declared': }
 
   include sublime_text_2
 

@@ -1,6 +1,6 @@
-class people::ndhoule::config::osx {
+class people::hackreactorworkstations::config::osx {
 
-  notify { 'class people::ndhoule::config::osx declared': }
+  notify { 'class people::hackreactorworkstations::config::osx declared': }
 
   exec { 'Show the ~/Library folder':
     command => "chflags nohidden ${my_homedir}/Library",
@@ -14,7 +14,6 @@ class people::ndhoule::config::osx {
   include osx_config::dashboard
   include osx_config::desktop
   include osx_config::disable_gatekeeper
-  include osx_config::disable_naturalscroll
   include osx_config::diskutility
   include osx_config::dock
   include osx_config::finder
