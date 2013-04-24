@@ -3,6 +3,14 @@ class osx_config::screen {
   boxen::osx_defaults {
     'Save screenshots to the desktop':
       ensure => present,
+      key    => 'askForPassword',
+      domain => 'com.apple.screensaver',
+      value  => '0',
+      type   => 'int',
+      user   => $::boxen_user;
+
+    'Save screenshots to the desktop':
+      ensure => present,
       key    => 'location',
       domain => 'com.apple.screencapture',
       value  => '$HOME/Desktop',
