@@ -12,7 +12,7 @@ class people::hackreactorworkstations::applications::npm {
     'coffeelint':
       node_version => 'v0.10';
 
-    'docco':
+    'csslint':
       node_version => 'v0.10';
 
     'express':
@@ -33,10 +33,19 @@ class people::hackreactorworkstations::applications::npm {
     'jshint':
       node_version => 'v0.10';
 
+    'meteor':
+      node_version => 'v0.10';
+
     'meteorite':
       node_version => 'v0.10';
 
     'mocha':
+      node_version => 'v0.10';
+
+    'mysql':
+      node_version => 'v0.10';
+
+    'mustache':
       node_version => 'v0.10';
 
     'node-inspector':
@@ -46,6 +55,9 @@ class people::hackreactorworkstations::applications::npm {
       node_version => 'v0.10';
 
     'requirejs':
+      node_version => 'v0.10';
+
+    'request':
       node_version => 'v0.10';
 
     'supervisor':
