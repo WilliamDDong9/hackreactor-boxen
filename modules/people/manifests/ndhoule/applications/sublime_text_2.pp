@@ -1,10 +1,10 @@
-class people::ndhoule::applications::sublime (
+class people::ndhoule::applications::sublime_text_2 (
   $my_sourcedir   = $people::ndhoule::params::my_sourcedir,
   $my_homedir     = $people::ndhoule::params::my_homedir,
   $my_username    = $people::ndhoule::params::my_username
 ) {
 
-  notify { 'class people::ndhoule::applications::sublime declared': }
+  notify { 'class people::ndhoule::applications::sublime_text_2 declared': }
 
   include sublime_text_2
 
@@ -32,7 +32,7 @@ class people::ndhoule::applications::sublime (
 
   file { "${base}/Sublime Text 2/Packages/User":
     ensure  => link,
-    target  => "${my_sourcedir}/dotfiles/st2/Packages/User",
+    target  => "${my_sourcedir}/dotfiles/sublime-text-2/Packages/User",
     require => Repository["dotfiles"],
   }
 

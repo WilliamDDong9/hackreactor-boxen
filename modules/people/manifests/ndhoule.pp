@@ -6,7 +6,7 @@ class people::ndhoule {
   include people::ndhoule::applications::main
   include people::ndhoule::applications::gems
   include people::ndhoule::applications::npm
-  include people::ndhoule::applications::sublime
+  include people::ndhoule::applications::sublime_text_2
   include people::ndhoule::applications::vim
 
   include people::ndhoule::config::dock
