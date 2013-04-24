@@ -31,9 +31,6 @@ class people::ndhoule::config::dotfiles (
     "dotfiles":
       source   => 'ndhoule/dotfiles',
       path     => "${my_sourcedir}/dotfiles";
-    "zprezto":
-      source   => 'ndhoule/prezto',
-      path     => "${my_sourcedir}/zprezto",
   }
 
   file { "${my_homedir}/.gvimrc":
@@ -74,8 +71,8 @@ class people::ndhoule::config::dotfiles (
 
   file { "${my_homedir}/.zprezto":
     ensure  => link,
-    target  => "${my_sourcedir}/zprezto",
-    require => Repository["zprezto"],
+    target  => "${my_sourcedir}/dotfiles/prezto",
+    require => Repository["dotfiles"],
   }
 
   file { "${my_homedir}/.zpreztorc":
