@@ -88,10 +88,6 @@ node default {
     source  => 'jamis/rbenv-gemset'
   }
 
-  # Install a homebrewed python
-  include python
-  include xquartz
-
   # Other modules
   include hub
   include java
