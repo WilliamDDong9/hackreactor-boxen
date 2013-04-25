@@ -94,7 +94,6 @@ node default {
   package {
     [
       'ack',
-      'findutils',
       'gnu-tar',
       'cmake',
       'readline',

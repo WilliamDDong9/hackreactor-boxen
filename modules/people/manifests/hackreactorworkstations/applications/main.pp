@@ -26,7 +26,6 @@ class people::hackreactorworkstations::applications::main {
     [
       'heroku-toolbelt',
       'reattach-to-user-namespace',
-      'rlwrap',
       'selenium-server-standalone',
       'ssh-copy-id',
       'sshfs',
