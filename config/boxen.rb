@@ -18,9 +18,6 @@ ENV["BOXEN_ISSUES_ENABLED"] = 'yes'
 # Submit audit data to an arbitrary HTTP endpoint
 # ENV["BOXEN_WEB_HOOK_URL"] = 'https://some-uri.com/boxen'
 
-# Change default source directory
-ENV["BOXEN_SRC_DIR"] = "/Users/hackreactor/.src"
-
 # Set ports back to defaults
 # TODO: Verify this works
 ENV["BOXEN_MYSQL_PORT"] = "3306"
