@@ -4,6 +4,10 @@ class people::hackreactorworkstations::files (
   $my_username    = $people::hackreactorworkstations::params::my_username
 ) {
 
+  # Enable class-specific folders
+  include 2013_03::folders
+  include 2013_04::folders
+
   file { "${my_homedir}/bin":
     ensure  => directory,
   }
