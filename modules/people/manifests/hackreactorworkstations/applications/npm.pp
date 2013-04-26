@@ -43,14 +43,6 @@ class people::hackreactorworkstations::applications::npm {
       node_version => 'v0.10',
       require      => Class['nodejs::v0_10'];
 
-    'meteor':
-      node_version => 'v0.10',
-      require      => Class['nodejs::v0_10'];
-
-    'meteorite':
-      node_version => 'v0.10',
-      require      => Class['nodejs::v0_10'];
-
     'mocha':
       node_version => 'v0.10',
       require      => Class['nodejs::v0_10'];
