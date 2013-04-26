@@ -23,7 +23,6 @@ class 2013_03::folders (
       "${my_homedir}/code/ruanp",
       "${my_homedir}/code/sellds4",
       "${my_homedir}/code/seung",
-      "${my_homedir}/code/testmasster",
       "${my_homedir}/code/timmysze",
       "${my_homedir}/code/YoungNeem",
     ]:
