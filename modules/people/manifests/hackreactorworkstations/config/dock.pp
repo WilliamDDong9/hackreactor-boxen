@@ -69,6 +69,11 @@ class people::hackreactorworkstations::config::dock (
       label   => "Contacts",
       action => "remove";
 
+    'Remove Calendar':
+      item => "/Applications/Calendar.app",
+      label   => "Calendar",
+      action => "remove";
+
     'Remove Messages':
       item => "/Applications/Messages.app",
       label   => "Messages",
