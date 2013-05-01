@@ -36,6 +36,12 @@ class people::hackreactorworkstations::applications::sublime_text_2 (
     require => Repository["dotfiles"],
   }
 
+  file { "${base}/Sublime Text 2/Packages/Color Scheme - Hack Reactor":
+    ensure  => link,
+    target  => "${my_sourcedir}/dotfiles/sublime-text-2/Packages/Color Scheme - Hack Reactor",
+    require => Repository["dotfiles"],
+  }
+
   addpkg {
     [
       "wbond/sublime_package_control",
